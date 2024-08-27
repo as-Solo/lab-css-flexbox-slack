@@ -24,11 +24,7 @@ footer links grey: #454245
     padding: 0;
     font-size: 14px;
     font-family: Montserrat;
-<<<<<<< HEAD
-    ;
-=======
     /* border: solid 1px red; */
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 }
 
 nav{
@@ -39,13 +35,6 @@ nav{
     background-color:#540B51 ;
     width: 100%;
     height: 50px;
-<<<<<<< HEAD
-    align-items: center;
-   
-  
-    
-=======
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 }
 
 nav img{
@@ -63,10 +52,7 @@ nav ul{
     width: 65%;
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
-=======
     width: 65%;
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
     padding-left: 50px;
 }
 
@@ -137,8 +123,6 @@ nav ul{
     align-content: center;
 }
 
-<<<<<<< HEAD
-=======
 #botonera ul li:nth-child(2) a{
     color: #540B51;
     margin: auto;
@@ -148,7 +132,6 @@ nav ul{
 
 }
 
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 
 #presentation{
     width: 100%;
@@ -168,26 +151,20 @@ nav ul{
     align-items: flex-start;
     width: 50%;
     color: white;
-    border: solid 1px green;
+    /*border: solid 1px green;*/
 }
 
 .head-left h1{
-<<<<<<< HEAD
-    font-size: 4.5rem;
-    margin-bottom: 30%;
-    padding-right: 20px;
-=======
     font-size: 4rem;
-    border: solid 1px green;
+    /*border: solid 1px green;*/
     padding: 40px;
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 }
 
 .head-left p{
     padding: 40px;
     font-size: 1.4rem;
     margin-bottom: 5%;
-    border: solid 1px green;
+    /*border: solid 1px green;*/
 }
 .head-left p span{
     font-size: 1.4rem;
@@ -196,7 +173,7 @@ nav ul{
 
 .head-l-buttons{
     padding: 0 40px 70px;
-    border: solid 1px green;
+    /*border: solid 1px green;*/
     position: relative;
     width: 80%;
     display: flex;
@@ -236,11 +213,6 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-<<<<<<< HEAD
-    flex-wrap: wrap;
-    /* border: solid 1px white; */
-=======
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 }
 
 .head-right img{
@@ -252,7 +224,7 @@ nav ul{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100px;
+    /*height: 100px;*/
     background-color: #F3EAE2;
     width: 100%;
 }
@@ -419,43 +391,112 @@ y en .head-left y .head-right cambiar el width a 100%
 */
 @media (width<768px){
 }
-
-<<<<<<< HEAD
-
-    .menu li{
-  display: none;
+.menu{
+    display: none;
 }
-
-
-#botonera ul{
- 
-display: none;
-    flex-direction: row;
-    justify-content: space-evenly;
+#botonera{
+    padding-right: 40px;
+    justify-content: space-between;
+    width: 20%;
 }
-
 #botonera button:nth-child(2){
-    visibility:visible;
-    background-color: #540B51;
+    display:inline-flex;
     border-style: none;
-}
-
-}
-
-/*Pantalla pequeña*/
-/* @media (width>768px and width <1024px){
+ }
+ #botonera button:nth-child(2) img{
+    background-color: #540B51;
+ }
+ #botonera ul{
+    display: none;
+ }
+ .head-left{
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    color: white;
+    /*border: 1px solid white;*/
+    text-align: center;
     
-} */
-=======
+ }
+
+ .head-left p{
+    text-align: center;
+    padding-left: 90px;
+ }
+ #enterprises{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+ }
+ #enterprises p{
+padding: 25px;
+ }
+.logos{
+flex-wrap: wrap;
+
+
+}
+.logos img{
+height: 40px;
+padding: 5px 5px 30px 5px;
+}
+.teams{
+    border: 10px solid black;
+    padding-bottom: 100px;
+}
+
+.teams h3{
+    text-align: center;
+    
+}
+
+.teams p{
+    text-align: center;
+    font-size:1rem;
+}
+    
+ .teams ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+ }
+ .teams ul li p span{
+    font-size: 0.5 rem;
+ }   
+ .teams ul li p{ 
+    text-align: center;
+    font-weight: 800;
+    
+ }
+
+
+ 
+#presentation{
+    flex-wrap: wrap;
+}
+.head-left{
+    width:100%;
+}
+.head-right{
+    width: 100%;
+}
+.teams{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Pantalla pequeña */
 @media ((width>768px) and (width <1024px)){
     .menu{
         display: none;
     }
-    nav{
-        /* border: solid 1px #2E71A6; */
-
-    }
+    
     #botonera button:nth-child(2){
         display: inline;
     }
@@ -489,7 +530,6 @@ display: none;
         flex-direction: column;
     }
 }
->>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 
 /*Pantalla mediana*/
 @media ((width>1024px) and (width <1440px)){
