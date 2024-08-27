@@ -151,12 +151,12 @@ nav ul{
     align-items: flex-start;
     width: 50%;
     color: white;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 
 .head-left h1{
     font-size: 4rem;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     padding: 40px;
 }
 
@@ -164,7 +164,7 @@ nav ul{
     padding: 40px;
     font-size: 1.4rem;
     margin-bottom: 5%;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 .head-left p span{
     font-size: 1.4rem;
@@ -173,7 +173,7 @@ nav ul{
 
 .head-l-buttons{
     padding: 0 40px 70px;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     position: relative;
     width: 80%;
     display: flex;
@@ -224,7 +224,7 @@ nav ul{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100px;
+    /* height: 100px; */
     background-color: #F3EAE2;
     width: 100%;
 }
@@ -283,16 +283,13 @@ li {
 .teams ul li{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 20%;
-    /* border: solid 1px green; */
 }
 
 .teams ul li span{
     font-size: 5em;
     font-weight: 600;
-    /* border: solid 1px green; */
 }
 
 .teams ul li p:nth-child(2){
@@ -302,6 +299,7 @@ li {
 .main-final{
     background-color: #540B51;
     color: white;
+    /* border: solid 1px green; */
 }
 
 .main-final h3{
@@ -390,6 +388,7 @@ poner en #presentatio flex wrap
 y en .head-left y .head-right cambiar el width a 100%
 */
 @media (width<768px){
+
 }
 
 /* Pantalla pequeña */
@@ -429,9 +428,22 @@ y en .head-left y .head-right cambiar el width a 100%
     .head-right img{
        width: 210%;
     }
+    .main-buttons button{
+        width: 60%;
+        margin: 5px auto;
+    }
+    
+    .main-final button:nth-child(2){
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    
     .main-buttons{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -442,4 +454,38 @@ y en .head-left y .head-right cambiar el width a 100%
 
 /*Pantalla grande*/
 @media (width>1440px){ 
- }
+    .menu{
+        width: 40%;
+    }
+    .head-left{
+        background-image: none;
+    }
+    .head-right{
+        justify-content: flex-start;
+    }
+    .head-right img {
+        width: 80%;
+    }
+    .head-l-buttons{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: solid 1px green; */
+        padding: 40px;
+    }
+    .head-l-buttons img{
+        position: absolute;
+        left: 10px;
+    }
+    .head-l-buttons button{
+        position: relative;
+        width: 50%;
+        margin-right: 15px;
+    }
+    .head-l-buttons button:nth-child(2){
+        margin: 0;
+    }
+    #enterprises{
+        height: 130px;
+    }
+}
