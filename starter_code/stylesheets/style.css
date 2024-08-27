@@ -24,6 +24,7 @@ footer links grey: #454245
     padding: 0;
     font-size: 14px;
     font-family: Montserrat;
+    ;
 }
 
 
@@ -35,7 +36,6 @@ nav{
     background-color:#540B51 ;
     width: 100%;
     height: 50px;
-    padding: 10px 30px;
     align-items: center;
    
   
@@ -57,7 +57,7 @@ nav ul{
     width: 65%;
     display: flex;
     flex-direction: row;
-    width: 65%;
+    padding-left: 50px;
 }
 
 .menu{
@@ -116,6 +116,7 @@ nav ul{
     visibility: hidden;
 }
 
+
 #presentation{
     display: flex;
     background-color: #540B51;
@@ -134,8 +135,9 @@ nav ul{
 }
 
 .head-left h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 30%;
+    padding-right: 20px;
 }
 
 .head-left p{
@@ -364,6 +366,30 @@ footer > div{
 
 /*Pantalla para movil */
 @media (width<768px){
+
+.imagen-menu{
+    
+
+}
+    .menu li{
+  display: none;
+}
+
+
+#botonera ul{
+ 
+display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#botonera button:nth-child(2){
+    visibility:visible;
+    background-color: #540B51;
+    border-style: none;
+}
+
+}
 
 /*Pantalla pequeña*/
 /* @media (width>768px and width <1024px){
