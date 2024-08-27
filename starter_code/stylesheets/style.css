@@ -24,6 +24,9 @@ footer links grey: #454245
     padding: 0;
     font-size: 14px;
     font-family: Montserrat;
+<<<<<<< HEAD
+    ;
+=======
     /* border: solid 1px red; */
 }
 
@@ -35,6 +38,13 @@ nav{
     background-color:#540B51 ;
     width: 100%;
     height: 50px;
+<<<<<<< HEAD
+    align-items: center;
+   
+  
+    
+=======
+>>>>>>> 149f76fda62c6c779f3163206c9331b1b2ff2407
 }
 
 nav img{
@@ -239,12 +249,14 @@ main section{
     text-transform: uppercase;
     font-size: .87rem;
     font-weight: 700;
+    padding: 20px 0;
 }
 
 .logos{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding: 20px 0;
 }
 
 .logos img{
@@ -283,16 +295,13 @@ li {
 .teams ul li{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 20%;
-    /* border: solid 1px green; */
 }
 
 .teams ul li span{
     font-size: 5em;
     font-weight: 600;
-    /* border: solid 1px green; */
 }
 
 .teams ul li p:nth-child(2){
@@ -302,6 +311,7 @@ li {
 .main-final{
     background-color: #540B51;
     color: white;
+    /* border: solid 1px green; */
 }
 
 .main-final h3{
@@ -525,10 +535,24 @@ padding: 5px 5px 30px 5px;
     .head-right img{
        width: 210%;
     }
+    .main-buttons button{
+        width: 60%;
+        margin: 5px auto;
+    }
+    
+    .main-final button:nth-child(2){
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    
     .main-buttons{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
+
 }
 
 /*Pantalla mediana*/
@@ -538,4 +562,38 @@ padding: 5px 5px 30px 5px;
 
 /*Pantalla grande*/
 @media (width>1440px){ 
- }
+    .menu{
+        width: 40%;
+    }
+    .head-left{
+        background-image: none;
+    }
+    .head-right{
+        justify-content: flex-start;
+    }
+    .head-right img {
+        width: 80%;
+    }
+    .head-l-buttons{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: solid 1px green; */
+        padding: 40px;
+    }
+    .head-l-buttons img{
+        position: absolute;
+        left: 10px;
+    }
+    .head-l-buttons button{
+        position: relative;
+        width: 50%;
+        margin-right: 15px;
+    }
+    .head-l-buttons button:nth-child(2){
+        margin: 0;
+    }
+    #enterprises{
+        height: 130px;
+    }
+}
