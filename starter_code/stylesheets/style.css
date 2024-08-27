@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -9,10 +11,11 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-size: 14px;
+    font-family: Montserrat;
 }
 
 nav{
@@ -30,20 +33,27 @@ nav img{
     height: 20px;
 }
 
+nav ul{
+    list-style-type: none;
+}
+
 .imagen-menu{
     width: 65%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 65%;
+    
+
 
 }
 .menu{
     display: flex;
     flex-direction: row;
+    list-style-type: none;
     justify-content: space-around;
-    border: solid 1px white;
-    width: 90%;
+    width: 70%;
 }
+    
 
 .botonera button:nth-child(2){
     visibility: hidden;
@@ -57,8 +67,232 @@ nav ul{
     list-style-type: none;
 }
 
+.menu li a{
+    color: white;
+}
+
 #botonera{
     display: flex;
     flex-direction: row;
 
+}
+/* 
+#botonera ul{
+
+} */
+
+#botonera button:nth-child(2){
+    visibility: hidden;
+}
+
+
+#presentation{
+    display: flex;
+    background-color: #540B51;
+    height: 700px;
+}
+
+.head-left{
+    padding: 40px 40px 80px;
+    background-image: url("../images/background-singup.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    /* border: solid 1px green; */
+    color: white;
+}
+
+.head-left h1{
+    font-size: 4rem;
+    margin-bottom: 30%;
+}
+
+.head-left p{
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+}
+.head-left p span{
+    font-size: 1.4rem;
+    color: #ECB12F;
+}
+
+.head-l-buttons{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.head-l-buttons img{
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    background-color: white;
+}
+.head-l-buttons button{
+   height: 40px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   color: #540B51;
+   font-weight: 600;
+   border: none;
+}
+
+.head-l-buttons button:nth-child(2){
+    display: flex;
+    background-color: #4285F4;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-l-buttons button:nth-child(2) span{
+    color: white;
+}
+
+.head-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: solid 1px white; */
+}
+
+.head-right img{
+    height: 40%;
+}
+
+#enterprises{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #F3EAE2;
+    width: 100%;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid 1px green ; */
+}
+
+#enterprises > p{
+    text-transform: uppercase;
+    font-size: .87rem;
+    font-weight: 700;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logos img{
+    height: 30px;
+}
+
+.teams{
+    height: 400px;
+    padding: 50px 70px;
+}
+
+li {
+    list-style: none;
+}
+
+.teams h3,span{
+    color: #540B51;
+    list-style-type: none;
+}
+
+.teams h3{
+    font-size: 2rem;
+    margin: 20px;
+}
+.teams > p{
+    font-size: .8rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.teams ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teams ul li{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 20%;
+    /* border: solid 1px green; */
+}
+
+.teams ul li span{
+    font-size: 5em;
+    font-weight: 600;
+    /* border: solid 1px green; */
+}
+
+.teams ul li p:nth-child(2){
+    font-weight: 700;
+}
+
+.main-final{
+    background-color: #540B51;
+    color: white;
+}
+
+.main-final h3{
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.main-final button{
+    height: 40px;
+    width: 150px;
+    margin: 0 4px 40px;
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: .9rem;
+    color: #540B51;
+    border-radius: 3px;
+    border: none;
+}
+
+.main-final button:nth-child(2){
+    color: white;
+    background-color: #540B51;
+    border: solid 1px white;
+}
+
+/*Pantalla para movil */
+@media (width<768px){
+
+    
+
+}
+
+
+/*Pantalla pequeña*/
+@media (width>768px and width <1024px){
+    
+}
+
+/*Pantalla mediana*/
+@media (width>1024px and width <1440px){
+    
+}
+
+/*Pantalla grande*/
+@media (width>1440px){
+    
 }
