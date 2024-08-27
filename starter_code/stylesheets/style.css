@@ -8,3 +8,53 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color:#540B51 ;
+    width: 100%;
+}
+
+nav img{
+width: 100px;
+}
+.imagen-menu{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#botonera{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*Pantalla para movil */
+@media (width<768px){
+
+    
+
+}
+
+
+/*Pantalla pequeña*/
+@media (width>768px and width <1024px){
+    
+}
+
+/*Pantalla mediana*/
+@media (width>1024px and width <1440px){
+    
+}
+
+/*Pantalla grande*/
+@media (width>1440px){
+    
+}
