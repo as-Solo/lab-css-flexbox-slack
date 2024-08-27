@@ -190,6 +190,7 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     /* border: solid 1px white; */
 }
 
@@ -367,10 +368,7 @@ footer > div{
 /*Pantalla para movil */
 @media (width<768px){
 
-.imagen-menu{
-    
 
-}
     .menu li{
   display: none;
 }
