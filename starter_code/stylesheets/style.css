@@ -400,7 +400,7 @@ poner en #presentatio flex wrap
 y en .head-left y .head-right cambiar el width a 100%
 */
 @media (width<768px){
-}
+
 .menu{
     display: none;
 }
@@ -459,6 +459,19 @@ padding: 5px 5px 30px 5px;
     padding-bottom: 100px;
 }
 
+#presentation{
+    flex-wrap: wrap;
+}
+.head-left{
+    width:100%;
+}
+.head-right{
+    width: 100%;
+}
+.teams{
+    display: flex;
+    flex-direction: column;
+}
 .teams h3{
     text-align: center;
     
@@ -477,30 +490,34 @@ padding: 5px 5px 30px 5px;
     
  }
  .teams ul li p span{
-    font-size: 0.5 rem;
+    font-size: 0.3 rem;
  }   
  .teams ul li p{ 
     text-align: center;
     font-weight: 800;
-    
+    font-size: 0.5rem;
  }
-
-
- 
-#presentation{
-    flex-wrap: wrap;
-}
-.head-left{
-    width:100%;
-}
-.head-right{
-    width: 100%;
-}
-.teams{
+ .main-buttons{
     display: flex;
     flex-direction: column;
+    align-items: center;
+ }
+.main-final h3{
+    text-align: center;
 }
+footer ul{
+    text-align: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
 
+}
+footer ul:nth-child(3){
+    text-align: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
 /* Pantalla pequeña */
 @media ((width>768px) and (width <1024px)){
     .menu{
